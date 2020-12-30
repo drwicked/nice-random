@@ -1,7 +1,7 @@
 {
   "name": "nice-random",
-  "version": "1.2.0",
-  "description": "Nice random pascal string generator.",
+  "version": "1.2.1",
+  "description": "Nice random camelCase string generator.",
   "author": "Jeff P",
   "license": "MIT",
   "private": false,
@@ -55,7 +55,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
-    "pascalcase": "^1.0.0"
+    "camelcase": "^6.2.0"
   },
   "bugs": {
     "url": "https://github.com/drwicked/nice-random/issues"

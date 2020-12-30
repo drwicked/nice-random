@@ -1,4 +1,4 @@
-import pascalcase from 'pascalcase'
+import camelCase from 'camelcase'
 import {
   places,
   placeDescribe,
@@ -8,22 +8,14 @@ import {
 
 export const pickArray = (array) => array[Math.floor(Math.random() * array.length)]
 
-const niceRandom = {}
-
-niceRandom.ping = () => {
-  return 'pong'
-}
-
-niceRandom.place = () => {
+export const randomPlace = () => {
   const adj = pickArray(placeDescribe)
   const place = pickArray(places)
-  return pascalcase(`${adj} ${place}`)
+  return camelCase(`${adj} ${place}`)
 }
 
-niceRandom.animal = () => {
+export const randomAnimal = () => {
   const adj = pickArray(adjectives)
   const animal = pickArray(animals)
-  return pascalcase(`${adj} ${animal}`)
+  return camelCase(`${adj} ${animal}`)
 }
-
-export default niceRandom
