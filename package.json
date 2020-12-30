@@ -1,6 +1,6 @@
 {
   "name": "nice-random",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "Nice random camelCase string generator.",
   "author": "Jeff P",
   "license": "MIT",
@@ -21,6 +21,8 @@
     "lint": "eslint --ext .js src test/unit",
     "watch": "jest --watch --config test/jest.conf.js",
     "prod": "npm run lint && npm run test && npm run build",
+    "prepublish": "yarn build",
+    "publish": "npm publish --access public",
     "npm:patch": "npm run prod && npm version patch && npm publish",
     "npm:minor": "npm run prod && npm version minor && npm publish"
   },
