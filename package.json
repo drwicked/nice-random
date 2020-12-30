@@ -1,18 +1,18 @@
 {
-  "name": "npm-js-package-boilerplate",
-  "version": "1.1.2",
-  "description": "Boilerplate for javascript module, ready to package for npm.",
-  "author": "Mattias Naarttijärvi",
+  "name": "nice-random",
+  "version": "1.2.0",
+  "description": "Nice random pascal string generator.",
+  "author": "Jeff P",
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Naartti/npm-js-package-boilerplate.git"
+    "url": "git+https://github.com/drwicked/nice-random.git"
   },
-  "main": "lib/npm-js-package-boilerplate.js",
-  "module": "lib/npm-js-package-boilerplate.js",
+  "main": "lib/nice-random.js",
+  "module": "lib/nice-random.js",
   "files": [
-    "lib/npm-js-package-boilerplate.js"
+    "lib/nice-random.js"
   ],
   "scripts": {
     "build": "webpack --mode=production",
@@ -45,13 +45,24 @@
     "eslint-plugin-node": "^5.2.0",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^3.0.1",
+    "handlebars": "^4.1.2",
     "jest": "^24.5.0",
+    "js-yaml": "^3.13.1",
+    "lodash": "^4.17.15",
     "uglifyjs-webpack-plugin": "^2.1.2",
     "webpack": "^4.38.0",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.7.2",
-    "lodash": "^4.17.15",
-    "js-yaml": "^3.13.1",
-    "handlebars": "^4.1.2"
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "pascalcase": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/drwicked/nice-random/issues"
+  },
+  "homepage": "https://github.com/drwicked/nice-random#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
